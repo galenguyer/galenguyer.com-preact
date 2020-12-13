@@ -7,12 +7,13 @@ import Header from "./components/header";
 import Home from "./routes/home";
 
 const App = () => (
-    <div id="app">
+    <article>
         <Header />
+        <hr />
         <Router>
             <Home path="/" />
         </Router>
-    </div>
+    </article>
 );
 
 export default App;

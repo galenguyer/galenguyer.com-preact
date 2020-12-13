@@ -1,104 +1,52 @@
-/* Reset all CSS elements */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap");
+
+body {
+    background-color: #f4f2e8;
+}
+
+article {
+    max-width: 720px;
+    font-family: "Nunito Sans", sans-serif;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    margin: 2rem auto 2rem auto;
+    line-height: 1.8;
+}
+
 h1,
 h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+h3 {
+    text-align: center;
     margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
 }
-body {
-    line-height: 1;
-    font-size: 10pt;
-    background: #293136;
+
+hr {
+    margin: 0rem 2rem 2rem 2rem;
 }
-#container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-bottom: 4em;
+
+img {
+    max-height: 400px;
+    max-width: 550px;
+    width: auto;
+    display: block;
+    margin: auto;
 }
-@media screen and (max-width: 1280px) {
-    #container {
-        width: 90%;
-    }
+
+.source {
+    padding-top: 2rem;
+    text-align: center;
+    color: #888888;
+    text-decoration: none;
+}
+
+a {
+    border-bottom: dotted 1px transparent;
+    text-decoration: none;
+    color: rgba(128, 128, 128, 1);
+    -moz-transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+}
+a:hover {
+    border-bottom: dotted 1px rgba(128, 128, 128, 1);
 }

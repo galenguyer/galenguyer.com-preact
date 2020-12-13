@@ -1,11 +1,9 @@
-import { h } from "preact";
-import { Link } from "preact-router/match";
-import Brand from "../brand";
-//import style from "./style.css";
+import "./style.scss";
 
 const Header = () => (
     <header>
-        <Brand />
+        <h1>Galen Guyer</h1>
+        <h2>Full Stack Software and DevOps Engineer</h2>
     </header>
 );
 
