@@ -8,7 +8,7 @@
     "serve": "sirv build --port 8080 --cors --single",
     "dev": "preact watch",
     "lint": "eslint src",
-    "test": "jest"
+    "test": "jest --testPathIgnorePatterns ./src/__tests__/__mocks__/ ./node_modules/"
   },
   "eslintConfig": {
     "extends": "preact",
@@ -34,8 +34,8 @@
   "jest": {
     "preset": "jest-preset-preact",
     "setupFiles": [
-      "<rootDir>/tests/__mocks__/browserMocks.js",
-      "<rootDir>/tests/__mocks__/setupTests.js"
+      "<rootDir>/src/__tests__/__mocks__/browserMocks.js",
+      "<rootDir>/src/__tests__/__mocks__/setupTests.js"
     ]
   }
 }
